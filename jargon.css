@@ -1,5 +1,5 @@
 header {
-    background-image:linear-gradient(to right, black, rgb(53, 17, 0), orange, brown, rgb(53, 17, 0), black);
+    background-image:linear-gradient(to right, black, rgb(53, 17, 0), brown, orange);
     min-height: 40px;
     border-bottom-style: double ;border-color: #d6b547;
   }
