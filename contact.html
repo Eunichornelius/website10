@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" type="image/x-icon" href="icon.jpg">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>ContactUs</title>
+    <script src="https://kit.fontawesome.com/e40d1a93d8.js" crossorigin="anonymous"></script>
+</head>
+<header>
+    <div class="topbar_container">
+        <div class="logo" id="pageTop"> <img src="img/jeff1.png" alt="Jeffery Clawmer"> </div>
+        <a class="bar" href="javascript:void(0);" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
+        <nav id="nav">
+            <ul>
+                <li class="nav"><a href="index.html">Home</a></li>
+                <li class="nav"><a href="links.html">Resources</a></li>
+                <li class="nav"><a href="about.html">About</a></li>
+                <li class="nav"><a href="jargon.html">Jargon</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <section>
+        <article>
+            <div class="container">
+                <form action="javascript:void(0);" onclick="openMultipleWindows()">
+                    <label for="fname">Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <label for="location">Location</label>
+                    <select id="county" name="County">
+                        <option value="Kitsap">Kitsap County</option>
+                        <option value="Washington">Other WA</option>
+                        <option value="OOS">Out of State</option>
+                    </select>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height: 300px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </article>
+        <article>
+            <img src="img/jeff.jpg" alt="Jeffery"> <br>
+            Video Credit:<a href="https://www.youtube.com/@AaronsAnimals" target="_blank">@AaronsAnimals</a>
+        </article>
+    </section>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("nav");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function openMultipleWindows() {
+            const numberOfWindows = 7; // Specify how many windows you want to open 
+            const url = "/media/catmaster.mp4"; // The URL to open 
+
+            for (let i = 0; i < numberOfWindows; i++) {
+                window.open(url, `Window${i + 1}`, "width=854,height=480");
+            }
+        } 
+    </script>
+</body>
+<footer>
+    <br><a href="#">Return to Top</a><br>
+    Author: Sam Henninger 2024 <a href="contact.html" target="_blank">Contact Us</a>
+</footer>
+
+</html>
