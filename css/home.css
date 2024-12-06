@@ -1,22 +1,23 @@
 header,
 nav,
 section,
-aside,
-footer {
+footer {/*giving a little wiggle room between the sections to prevent overlap*/
   padding: 10px;
 }
 header {
+  /*this is the styling for the header, each page has a slightly different gradient to put emphasis on which page you are on*/
   background-image: linear-gradient(to right, black, orange, brown, rgb(53, 17, 0), black);
   min-height: 40px;
   border-bottom-style: double;
   border-color: #d6b547;
 }
+/*navbar styling setting the grid*/
 .topbar_container {
   display: grid;
   grid-template-columns: 10% 90%;
   align-items: end;
 }
-
+/*navbar list*/
 Nav ul {
   display: flex;
   justify-content: space-around;
@@ -24,7 +25,7 @@ Nav ul {
   margin: 0;
   padding: 0;
 }
-
+/*making the navbar pretty this one is specifically for wider viewports*/
 Nav li {
   color: white;
   text-shadow: rgba(145, 82, 0, 0.76) 2px 0 6px;
@@ -60,48 +61,50 @@ li a:hover {
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-
+/*this is the transition to the "mobile view" for the nav menu*/
 @media only screen and (max-width: 550px) {
   .topbar_container {
-    display: block;
-    grid-template-columns: 1fr 1fr;
+      display: block;
+      grid-template-columns: 1fr 1fr;
   }
-
+/*moving the logo from the left to center*/
   .logo {
-    text-align: center;
+      text-align: center;
   }
 
   #nav {
-    display: none;
+      display: none;
   }
-
+/*styling for the mobile view*/
   .bar {
-    display: block;
-    text-align: center;
-    background: #d6b547;
-    color: white;
-    margin: 0;
+      display: block;
+      text-align: center;
+      background: #d6b547;
+      color: white;
+      margin: 0;
   }
 
   nav ul {
-    display: block;
+      display: block;
   }
 
   nav li {
-    margin: 0 auto;
-    text-align: center;
+      margin: 0 auto;
+      text-align: center;
   }
 
   .nav-toggle {
-    display: block;
+      display: block;
   }
 
 }
 
 body {
+  /*a little bit of padding on the sides as requested*/
   padding-left: 25px;
   padding-right: 25px;
   color: white;
+  /*making the black background for the page less boring*/
   background-image: url(/img/jeff.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -113,6 +116,7 @@ body {
   padding-left: 25px;
   padding-right: 25px;
   font-family: segoe-ui_normal, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Helvetica, sans-serif;
+  /*grid layout styling for the content*/
   display: grid;
   grid-template-areas:
     "section section section";
@@ -122,7 +126,7 @@ body {
   height: 100vh;
   margin: 10px;
 }
-
+/*just making the images behave*/
 img {
   width: 100%;
   height: auto;
@@ -135,7 +139,7 @@ section {
   flex-wrap: wrap;
   grid-area: section;
 }
-
+/*styling for the article elements within the section*/
 article {
   padding: 10px;
   margin: 10px;
@@ -143,6 +147,6 @@ article {
   text-shadow: rgb(139, 80, 1) 1px 1px;
 }
 
-footer {
+footer { /*a little shadow so you can read the footer*/
   text-shadow: rgb(168, 98, 7) 1px 1px;
 }

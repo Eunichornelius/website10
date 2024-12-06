@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
-
+<!--This is the metadata for the page.-->
 <head>
-    <link rel="icon" type="image/x-icon" href="icon.jpg">
+    <link rel="icon" type="image/x-icon" href="img/icon.jpg">
     <link rel="stylesheet" href="css/contact.css">
     <title>ContactUs</title>
     <script src="https://kit.fontawesome.com/e40d1a93d8.js" crossorigin="anonymous"></script>
 </head>
 <header>
+    <!--This is the Header and Navigation menu for the page-->
     <div class="topbar_container">
+    <!--The logo for the webpage-->
         <div class="logo" id="pageTop"> <img src="img/jeff1.png" alt="Jeffery Clawmer"> </div>
+    <!--This is calling the JS that allows the menu to collapse at smaller screen sizes-->
         <a class="bar" href="javascript:void(0);" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
         <nav id="nav">
             <ul>
@@ -25,7 +28,9 @@
 <body>
     <section>
         <article>
+            <!--This is what presents the input options to a user to contact the webmaster.-->
             <div class="container">
+                <!--this JS is called upon click regardless of where within this container-->
                 <form action="javascript:void(0);" onclick="openMultipleWindows()">
                     <label for="fname">Name</label>
                     <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -38,16 +43,17 @@
                     <label for="subject">Subject</label>
                     <textarea id="subject" name="subject" placeholder="Write something.."
                         style="height: 300px"></textarea>
-
                     <input type="submit" value="Submit">
                 </form>
             </div>
         </article>
         <article>
+            <!--just a picture of Jeff to go alongside the contact form-->
             <img src="img/jeff.jpg" alt="Jeffery"> <br>
             Video Credit:<a href="https://www.youtube.com/@AaronsAnimals" target="_blank">@AaronsAnimals</a>
         </article>
     </section>
+    <!--This is the javascript used to make the navbar function and for the contact form-->
     <script>
         function myFunction() {
             var x = document.getElementById("nav");
@@ -58,9 +64,9 @@
             }
         }
         function openMultipleWindows() {
-            const numberOfWindows = 7; // Specify how many windows you want to open 
-            const url = "/media/catmaster.mp4"; // The URL to open 
-
+            const numberOfWindows = 7;
+            const url = "/media/catmaster.mp4";
+            //this tries to open a window with the URL above until it has opened 7 hurray for "for loops"
             for (let i = 0; i < numberOfWindows; i++) {
                 window.open(url, `Window${i + 1}`, "width=854,height=480");
             }
@@ -68,7 +74,8 @@
     </script>
 </body>
 <footer>
-    <br><a href="#">Return to Top</a><br>
+    <br><a href="#">Return to Top</a><br> <!--click to go back to the top-->
+    <!--opens this webpage-->
     Author: Sam Henninger 2024 <a href="contact.html" target="_blank">Contact Us</a>
 </footer>
 

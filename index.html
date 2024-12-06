@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
-
+<!--metadata for the page. there is a callout for where I got the script to make my nav Menu work-->
 <head>
-    <link rel="icon" type="image/x-icon" href="icon.jpg">
+    <link rel="icon" type="image/x-icon" href="img/icon.jpg">
     <link rel="stylesheet" href="css/home.css">
     <title>JSRR</title>
     <script src="https://kit.fontawesome.com/e40d1a93d8.js" crossorigin="anonymous"></script>
 </head>
 <header>
+    <!--This is the Header and Navigation menu for the page-->
     <div class="topbar_container">
-        <div class="logo" id="pageTop"> <img src="img/jeff1.png" alt="Jeffery Clawmer"> </div>
+        <!--The logo for the webpage-->
+            <div class="logo" id="pageTop"> <img src="img/jeff1.png" alt="Jeffery Clawmer"> </div>
+        <!--This is calling the JS that allows the menu to collapse at smaller screen sizes-->
         <a class="bar" href="javascript:void(0);" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
         <nav id="nav">
             <ul>
@@ -23,8 +26,10 @@
 </header>
 
 <body>
+    <!--A quick title for the page-->
     <h1>Navigating Familiy Law in Kitsap County without an Attorney</h1>
     <section>
+        <!--What this page is about with a few links-->
         <article>
             Going to court, filing legal paperwork are already daunting enough tasks without
             the stress that usually precedes and persists going through this process. I've tried to compile the basic
@@ -50,6 +55,7 @@
             house.
         </article>
     </section>
+    <!--This is the javascript used to make the navbar function-->
     <script>
         function myFunction() {
             var x = document.getElementById("nav");
@@ -63,6 +69,7 @@
 </body>
 <footer>
     <br><a href="#">Return to Top</a><br>
+    <!--A link to the contact page for feedback... maybe-->
     Author: Sam Henninger 2024 <a href="contact.html" target="_blank">Contact Us</a>
 </footer>
 

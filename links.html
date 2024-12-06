@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
-
+<!--metadata for the page. there is a callout for where I got the script to make my nav Menu work-->
 <head>
-  <link rel="icon" type="image/x-icon" href="icon.jpg">
+  <link rel="icon" type="image/x-icon" href="img/icon.jpg">
   <link rel="stylesheet" href="css/links.css">
   <title>JSRR</title>
   <script src="https://kit.fontawesome.com/e40d1a93d8.js" crossorigin="anonymous"></script>
 </head>
 <header>
-  <div class="topbar_container">
-    <div class="logo" id="pageTop"> <img src="img/jeff1.png" alt="Jeffery Clawmer"> </div>
+     <!--This is the Header and Navigation menu for the page-->
+     <div class="topbar_container">
+      <!--The logo for the webpage-->
+          <div class="logo" id="pageTop"> <img src="img/jeff1.png" alt="Jeffery Clawmer"> </div>
+      <!--This is calling the JS that allows the menu to collapse at smaller screen sizes-->
     <a class="bar" href="javascript:void(0);" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
     <nav id="nav">
       <ul>
@@ -22,6 +25,7 @@
   </div>
 </header>
 <section>
+  <!--the real content of this page overall. A little bit of an overview, with 3 distinct sections with links to forms-->
   <h1>
     There are a number of great resources out here for us here in Washington State. Probably one of the best resources
     is
@@ -108,18 +112,20 @@
     <img src="img/cattorney.png">
   </article>
 </section>
-<script>
-  function myFunction() {
-    var x = document.getElementById("nav");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  }
-</script>
+    <!--This is the javascript used to make the navbar function-->
+    <script>
+      function myFunction() {
+          var x = document.getElementById("nav");
+          if (x.style.display === "none") {
+              x.style.display = "block";
+          } else {
+              x.style.display = "none";
+          }
+      }
+  </script>
 <footer>
   <br><a href="#">Return to Top</a><br>
+  <!--A link to the contact page for feedback... maybe-->
   Author: Sam Henninger 2024 <a href="contact.html" target="_blank">Contact Us</a>
 </footer>
 
